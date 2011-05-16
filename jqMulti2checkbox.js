@@ -2,8 +2,7 @@ $.fn.multi2checkbox = function (params) {
   params = $.extend({
     'htmlCheckbox': '<div>{$options}</div>',
     'htmlOption': '<label><input type="checkbox" name="{$name}" value="{$value}" {$checked} /> {$text}</label>',
-    'htmlOptionGlue': '<br />',
-    'selOption' : 'input[type=checkbox]'
+    'htmlOptionGlue': '<br />'
   }, params || {});
   return $(this).each(function (i, sel) {
     $sel = $(sel).hide();
