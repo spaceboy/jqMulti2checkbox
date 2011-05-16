@@ -8,7 +8,6 @@ $.fn.multi2checkbox = function (params) {
   return $(this).each(function (i, sel) {
     $sel = $(sel).hide();
     var innerHTML = [];
-    params['parentForm'] = params['parentForm'] || $sel.closest('form');
     $('option', $sel).each(function (i, opt) {
       innerHTML.push(
         keyReplace(params['htmlOption'], {
